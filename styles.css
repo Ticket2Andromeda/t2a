@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+.bio{
+    background-color: rgba(0,0,254,.257);
+    padding: 10px;
+    margin-top: 0px;
+    height: 200px;
+    border-radius: 12px;
+}
+img {
+    display: inline-block;
+    border-radius: 40%;
+    text-align: left;
+    opacity: .8;
+    object-fit: cover;
+    
+}
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 3;
+}
+.header {
+    padding: 10px;
+    text-align: center;
+    color: rgb(254,254,254);
+}
+.leftcolumn {
+    float: left;
+    width: 70%;
+}
+.rightcolumn {
+    float: right;
+    width: 29%; 
+    padding-left: 5px;
+}
+.inrleftcolumn {
+    float: left;
+    width: 30%;
+}
+.inrrightcolumn {
+    float: left;
+    width: 70%; 
+    padding-left: 5px;
+}
+.column{
+    float: left;
+    padding: 15px;
+    width: 33.33%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear:both;
+}
+a:link {
+    float: none;
+    width : 100%;
+    height : 20%;
+    display : block;
+    padding : 5px;
+    margin-top: 5px;
+    color : white;
+    background-color: rgba(0, 0, 200, 0.247);
+    text-decoration: none;
+    border-radius: 15%;
+}
+a:hover {
+    float : none;
+    width: 100%;
+    height : 20%;
+    display: block;
+    color: rgb(254,254,254);
+    background-color: rgba(0, 0, 200, 0.61);
+    text-decoration: none;
+}
+.card, .pcard {
+    background-color: rgba(0, 0, 200, 0.247);
+    padding: 10px;
+    margin-top: 0px;
+    height: 200px;
+    border-radius: 12px;
+    text-align: center;
+}
+.pcard:hover{
+    background-color: rgba(0, 0, 150, 0.247);
+    padding: 10px;
+    margin-top: 0px;
+    height: 200px;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+@media screen and (max-width:600px) {
+    .column {
+        width:100%;
+        color: white;
+    }
+    .leftcolumn{
+        width: 100%;
+    }
+    .rightcolumn{
+        width: 100%;
+    }
+    .inrleftcolumn{
+        width: 100%;
+    }
+    .inrrightcolumn{
+        width: 100%;
+    }
+    .card {
+        margin-top : 10px;
+    }
+}
+body{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+canvas {
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+  }
